@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BT</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Header Styles */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background: #000;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero .btn {
+        background: #fff;
+        color: #000;
+        padding: 0.8rem 2rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .hero .btn:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    /* Products Section */
+    .products {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .products h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .product-grid {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 1rem;
+        max-width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 1rem;
+    }
+
+    .product-card:hover {
+        transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer {
+        background: #000;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
+</style>
+        
+</head>
+<body>
+    <header class="header">
+        <div class="logo">BUSHRA TARIQ</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Step Into Your Best</h1>
+            <p>Discover the World of FOXY</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Shoes">
+                <h3>Running Shoes</h3>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Sportswear">
+                <h3>Sportswear</h3>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy;ITS MY WEBSITE MY RULES HUZIIIIII</p>
+    </footer>
+</body>
+</html>
